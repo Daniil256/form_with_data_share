@@ -28,7 +28,7 @@ window.addEventListener('input', function () {
         } else {
             btn.setAttribute("href", 'result.html')
             btn.style.cursor = 'pointer'
-            btn.style.background = '#eee'
+            btn.style.background = '#fff'
         }
     }
 })
