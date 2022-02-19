@@ -28,7 +28,7 @@ window.addEventListener('input', function () {
         } else {
             btn.setAttribute("href", 'result.html')
             btn.style.cursor = 'pointer'
-            btn.style.background = '#fff'
+            btn.style.background = '#eee'
         }
     }
 })
@@ -100,8 +100,8 @@ btn.onclick = function () {
             data.push(send_value[i].name + ':' + send_value[i].value)
         }
         localStorage.setItem('data', data)
-        // btn.type = 'submit'
     } else {
+        btn.removeAttribute("href", 'result.html')
         pass.style.borderBottom = '2px solid rgba(255, 0, 0, 0.5)'
         confirm_pass.style.borderBottom = '2px solid rgba(255, 0, 0, 0.5)'
     }
