@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="result.html" method="post" class="form">
+            <span>Выберите модель велосипеда</span>
+            <select name="bike_list" class="send_value">
+                <option value="Merida Speeder">Merida Speeder</option>
+                <option value="Giant iNeed Street">Giant iNeed Street</option>
+                <option value="Forward Cosmo">Forward Cosmo</option>
+                <option value="Forward Sporting">Forward Sporting</option>
+                <option value="Dahon Dream D6">Dahon Dream D6</option>
+                <option value="Format 1412">Format 1412</option>
+                <option value="Stels Navigator">Stels Navigator</option>
+            </select>
+            <textarea placeholder="Ваши комментарии к товару" name="about" class="send_value"></textarea>
+            <span>Адрес для выставления счета</span>
+            <input type="text" placeholder="Имя" maxlength="15" class="entry_field send_value" name="name">
+            <input type="text" placeholder="Фамилия" maxlength="15" class="entry_field send_value" name="last_name">
+            <select name="region" class="send_value">
+                <option value="1">Республика Адыгея</option>
+                <option value="2">Республика Алтай </option>
+                <option value="3">Республика Башкортостан </option>
+                <option value="4">Республика Бурятия </option>
+                <option value="5">Республика Дагестан </option>
+                <option value="6">Республика Ингушетия </option>
+                <option value="7">Кабардино-Балкарская Республика</option>
+                <option value="8">Республика Калмыкия </option>
+                <option value="9">Карачаево-Черкесская Республика</option>
+                <option value="10">Республика Карелия </option>
+                <option value="11">Республика Коми </option>
+                <option value="12">Республика Марий Эл </option>
+                <option value="13">Республика Мордовия </option>
+                <option value="14">Республика Саха (Якутия) </option>
+                <option value="15">Республика Северная Осетия - Алания </option>
+                <option value="16">Республика Татарстан</option>
+                <option value="17">Республика Тыва </option>
+                <option value="18">Удмуртская Республика </option>
+                <option value="19">Республика Хакасия </option>
+                <option value="20">Чеченская Республика</option>
+                <option value="21">Чувашская Республика</option>
+                <option value="22">Алтайский край</option>
+                <option value="75">Забайкальский край</option>
+                <option value="41">Камчатский край</option>
+                <option value="23">Краснодарский край</option>
+                <option value="24">Красноярский край</option>
+                <option value="59">Пермский край</option>
+                <option value="25">Приморский край</option>
+                <option value="26">Ставропольский край</option>
+                <option value="27">Хабаровский край</option>
+                <option value="28">Амурская область </option>
+                <option value="29">Архангельская область</option>
+                <option value="30">Астраханская область </option>
+                <option value="31">Белгородская область</option>
+                <option value="32">Брянская область </option>
+                <option value="33">Владимирская область </option>
+                <option value="34">Волгоградская область </option>
+                <option value="35">Вологодская область </option>
+                <option value="36">Воронежская область </option>
+                <option value="37">Ивановская область </option>
+                <option value="38">Иркутская область </option>
+                <option value="39">Калининградская область</option>
+                <option value="40">Калужская область </option>
+                <option value="42">Кемеровская область </option>
+                <option value="43">Кировская область </option>
+                <option value="44">Костромская область </option>
+                <option value="45">Курганская область </option>
+                <option value="46">Курская область </option>
+                <option value="47">Ленинградская область </option>
+                <option value="48">Липецкая область </option>
+                <option value="49">Магаданская область</option>
+                <option value="50">Московская область </option>
+                <option value="51">Мурманская область </option>
+                <option value="52">Нижегородская область </option>
+                <option value="53">Новгородская область </option>
+                <option value="54">Новосибирская область </option>
+                <option value="55">Омская область</option>
+                <option value="56">Оренбургская область </option>
+                <option value="57">Орловская область </option>
+                <option value="58">Пензенская область </option>
+                <option value="60">Псковская область </option>
+                <option value="61">Ростовская область </option>
+                <option value="62">Рязанская область </option>
+                <option value="63">Самарская область </option>
+                <option value="64">Саратовская область </option>
+                <option value="65">Сахалинская область </option>
+                <option value="66">Свердловская область </option>
+                <option value="67">Смоленская область </option>
+                <option value="68">Тамбовская область </option>
+                <option value="69">Тверская область </option>
+                <option value="70">Томская область </option>
+                <option value="71">Тульская область</option>
+                <option value="72">Тюменская область </option>
+                <option value="73">Ульяновская область </option>
+                <option value="74">Челябинская область </option>
+                <option value="76">Ярославская область</option>
+                <option value="77">Москва</option>
+                <option value="78">Санкт-Петербург</option>
+                <option value="79">Еврейская АО</option>
+                <option value="80">Ненецкий АО</option>
+                <option value="81">Ханты-Мансийский АО</option>
+                <option value="82">Чукотский АО</option>
+                <option value="83">Ямало-Ненецкий АО</option>
+            </select>
+            <input type="text" placeholder="Город, улица, дом" maxlength="40" class="entry_field send_value "
+                name="address">
+            <input type="text" placeholder="Почтовый индекс" maxlength="8" class="only_num entry_field send_value"
+                name="post_index">
+            <input type="text" placeholder="Телефон" maxlength="11" class="only_num entry_field send_value" name="tel">
+            <span>Адрес доставки</span>
+            <label><input type="checkbox" class="checkbox" name="checkbox_delivery" checked>Такой же, как и адрес
+                выставления
+                счета</label>
+            <div id="del" hidden>
+                <input type="text" placeholder="Имя" maxlength="15" name="delivery_name" class="send_value">
+                <input type="text" placeholder="Фамилия" maxlength="15" name="delivery_last_name" class="send_value">
+                <select name="delivery_region" class="send_value">
+                    <option value="1">Республика Адыгея</option>
+                    <option value="2">Республика Алтай </option>
+                    <option value="3">Республика Башкортостан </option>
+                    <option value="4">Республика Бурятия </option>
+                    <option value="5">Республика Дагестан </option>
+                    <option value="6">Республика Ингушетия </option>
+                    <option value="7">Кабардино-Балкарская Республика</option>
+                    <option value="8">Республика Калмыкия </option>
+                    <option value="9">Карачаево-Черкесская Республика</option>
+                    <option value="10">Республика Карелия </option>
+                    <option value="11">Республика Коми </option>
+                    <option value="12">Республика Марий Эл </option>
+                    <option value="13">Республика Мордовия </option>
+                    <option value="14">Республика Саха (Якутия) </option>
+                    <option value="15">Республика Северная Осетия - Алания </option>
+                    <option value="16">Республика Татарстан</option>
+                    <option value="17">Республика Тыва </option>
+                    <option value="18">Удмуртская Республика </option>
+                    <option value="19">Республика Хакасия </option>
+                    <option value="20">Чеченская Республика</option>
+                    <option value="21">Чувашская Республика</option>
+                    <option value="22">Алтайский край</option>
+                    <option value="75">Забайкальский край</option>
+                    <option value="41">Камчатский край</option>
+                    <option value="23">Краснодарский край</option>
+                    <option value="24">Красноярский край</option>
+                    <option value="59">Пермский край</option>
+                    <option value="25">Приморский край</option>
+                    <option value="26">Ставропольский край</option>
+                    <option value="27">Хабаровский край</option>
+                    <option value="28">Амурская область </option>
+                    <option value="29">Архангельская область</option>
+                    <option value="30">Астраханская область </option>
+                    <option value="31">Белгородская область</option>
+                    <option value="32">Брянская область </option>
+                    <option value="33">Владимирская область </option>
+                    <option value="34">Волгоградская область </option>
+                    <option value="35">Вологодская область </option>
+                    <option value="36">Воронежская область </option>
+                    <option value="37">Ивановская область </option>
+                    <option value="38">Иркутская область </option>
+                    <option value="39">Калининградская область</option>
+                    <option value="40">Калужская область </option>
+                    <option value="42">Кемеровская область </option>
+                    <option value="43">Кировская область </option>
+                    <option value="44">Костромская область </option>
+                    <option value="45">Курганская область </option>
+                    <option value="46">Курская область </option>
+                    <option value="47">Ленинградская область </option>
+                    <option value="48">Липецкая область </option>
+                    <option value="49">Магаданская область</option>
+                    <option value="50">Московская область </option>
+                    <option value="51">Мурманская область </option>
+                    <option value="52">Нижегородская область </option>
+                    <option value="53">Новгородская область </option>
+                    <option value="54">Новосибирская область </option>
+                    <option value="55">Омская область</option>
+                    <option value="56">Оренбургская область </option>
+                    <option value="57">Орловская область </option>
+                    <option value="58">Пензенская область </option>
+                    <option value="60">Псковская область </option>
+                    <option value="61">Ростовская область </option>
+                    <option value="62">Рязанская область </option>
+                    <option value="63">Самарская область </option>
+                    <option value="64">Саратовская область </option>
+                    <option value="65">Сахалинская область </option>
+                    <option value="66">Свердловская область </option>
+                    <option value="67">Смоленская область </option>
+                    <option value="68">Тамбовская область </option>
+                    <option value="69">Тверская область </option>
+                    <option value="70">Томская область </option>
+                    <option value="71">Тульская область</option>
+                    <option value="72">Тюменская область </option>
+                    <option value="73">Ульяновская область </option>
+                    <option value="74">Челябинская область </option>
+                    <option value="76">Ярославская область</option>
+                    <option value="77">Москва</option>
+                    <option value="78">Санкт-Петербург</option>
+                    <option value="79">Еврейская АО</option>
+                    <option value="80">Ненецкий АО</option>
+                    <option value="81">Ханты-Мансийский АО</option>
+                    <option value="82">Чукотский АО</option>
+                    <option value="83">Ямало-Ненецкий АО</option>
+                </select>
+                <input type="text" placeholder="Город, улица, дом" maxlength="25" name="delivery_address"
+                    class="send_value">
+                <input type="text" placeholder="Почтовый индекс" maxlength="8" class="only_num send_value"
+                    name="delivery_post_index">
+                <input type="text" placeholder="Телефон" maxlength="15" class="only_num send_value"
+                    name="delivery_text">
+            </div>
+            <span>Дата доставки</span>
+            <select name="year" class="send_value">
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+            <select name="month" class="send_value" id="month">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            <select name="date" class="send_value" id="date">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29" id="date29" class="date_hidden">29</option>
+                <option value="30" id="date30" class="date_hidden">30</option>
+                <option value="31" id="date31" class="date_hidden">31</option>
+            </select>
+            <span>Оплата</span>
+            <input type="text" placeholder="Номер карты" class="card_number only_num entry_field send_value"
+                maxlength="19" name="card_num">
+            <input type="text" placeholder="Срок действия" maxlength="5" class="entry_field send_value"
+                name="card_validity">
+            <input type="password" placeholder="CVV код" class="only_num entry_field send_value" maxlength="4"
+                name="card_cvv_code">
+            <span>Создать аккаунт</span>
+            <input type="text" placeholder="Имя пользователя" maxlength="15" class="entry_field send_value" name="user">
+            <input type="password" placeholder="Пароль" maxlength="15" class="entry_field pass send_value" name="pass">
+            <input type="password" placeholder="Подтвердите пароль" maxlength="15"
+                class="entry_field confirm_pass send_value" name="confirm_pass">
+            <input type="button" value="Отправить" class="btn" id="btn" disabled>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

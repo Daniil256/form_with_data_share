@@ -1,0 +1,89 @@
+html,
+body {
+    max-width: 100%;
+    background-color: #ddd;
+}
+
+.wrapper {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    background-color: #eee;
+}
+span,
+input,
+select,
+textarea,
+label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid transparent;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #222;
+}
+label,
+span {
+    padding: 10px 0;
+}
+textarea {
+    height: 60px;
+}
+input {
+    background-color: rgb(255, 255, 255);
+}
+input:not(.btn):focus,
+textarea:focus {
+    /* border-bottom: 2px solid rgba(0, 255, 0, 0.5); */
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+.checkbox {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 0;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+}
+span {
+    display: inline-block;
+    padding: 5px;
+    background-color: #ddd;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    outline: 2px solid #ccc;
+    margin: 20px 0 0 0;
+}
+.btn:hover {
+    outline: 2px solid #aaa;
+}
+.btn:disabled {
+    outline: none;
+    background-color: #ccc;
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 0 5px;
+    }
+    span,
+    input,
+    select,
+    textarea,
+    label {
+        font-size: 1em;
+    }
+}
