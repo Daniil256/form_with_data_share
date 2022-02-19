@@ -63,7 +63,6 @@ span {
 }
 
 .btn {
-    cursor: pointer;
     outline: 2px solid #ccc;
     margin: 20px 0 0 0;
 }

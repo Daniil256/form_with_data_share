@@ -22,9 +22,11 @@ window.addEventListener('input', function () {
     for (let i = 0; i < entry_field.length; i++) {
         if (entry_field[i].value.length < 2) {
             btn.setAttribute("disabled", true)
+            btn.style.cursor = 'auto'
             return
         } else {
             btn.removeAttribute("disabled", true)
+            btn.style.cursor = 'pointer'
         }
     }
 })
