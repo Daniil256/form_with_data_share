@@ -21,12 +21,14 @@ const pass = form.querySelector('.pass')
 window.addEventListener('input', function () {
     for (let i = 0; i < entry_field.length; i++) {
         if (entry_field[i].value.length < 2) {
-            btn.setAttribute("disabled", true)
+            btn.removeAttribute("href", 'result.html')
             btn.style.cursor = 'auto'
+            btn.style.background = '#aaa'
             return
         } else {
-            btn.removeAttribute("disabled", true)
+            btn.setAttribute("href", 'result.html')
             btn.style.cursor = 'pointer'
+            btn.style.background = '#eee'
         }
     }
 })
@@ -98,7 +100,7 @@ btn.onclick = function () {
             data.push(send_value[i].name + ':' + send_value[i].value)
         }
         localStorage.setItem('data', data)
-        btn.type = 'submit'
+        // btn.type = 'submit'
     } else {
         pass.style.borderBottom = '2px solid rgba(255, 0, 0, 0.5)'
         confirm_pass.style.borderBottom = '2px solid rgba(255, 0, 0, 0.5)'

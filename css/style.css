@@ -63,15 +63,17 @@ span {
 }
 
 .btn {
-    outline: 2px solid #ccc;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    color: #000;
+    background-color: #aaa;
+    padding: 5px 0;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
     margin: 20px 0 0 0;
-}
-.btn:hover {
-    outline: 2px solid #aaa;
-}
-.btn:disabled {
-    outline: none;
-    background-color: #ccc;
+    user-select: none;
 }
 
 @media (max-width: 400px) {
