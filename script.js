@@ -15,20 +15,21 @@ const date_hidden = form.querySelectorAll('.date_hidden')
 const result = form.querySelector('.result')
 const confirm_pass = form.querySelector('.confirm_pass')
 const pass = form.querySelector('.pass')
+const values = document.querySelector('.values')
 
 
 //кнопка отправить становится disabled, если не все поля заполнены
 window.addEventListener('input', function () {
     for (let i = 0; i < entry_field.length; i++) {
         if (entry_field[i].value.length < 2) {
-            btn.removeAttribute("href", 'result.html')
+            btn.removeAttribute("href", '#')
             btn.style.cursor = 'auto'
             btn.style.background = '#aaa'
             return
         } else {
-            btn.setAttribute("href", 'result.html')
+            btn.setAttribute("href", '#')
             btn.style.cursor = 'pointer'
-            btn.style.background = '#fff'
+            btn.style.background = '#eee'
         }
     }
 })
@@ -92,17 +93,32 @@ function updateFirst() {
     }
 }
 
-//отправка данных
-btn.onclick = function () {
-    if (pass.value == confirm_pass.value) {
-        let data = []
-        for (let i = 0; i < send_value.length; i++) {
-            data.push(send_value[i].name + ':' + send_value[i].value)
-        }
-        localStorage.setItem('data', data)
-    } else {
-        btn.removeAttribute("href", 'result.html')
-        pass.style.borderBottom = '2px solid rgba(255, 0, 0, 0.5)'
-        confirm_pass.style.borderBottom = '2px solid rgba(255, 0, 0, 0.5)'
+btn.addEventListener('click', () => {
+    const obj = {
+        bike_list: form.bike_list.value,
+        about: form.about.value,
+        name: form.name.value,
+        last_name: form.last_name.value,
+        address: form.address.value,
+        post_index: form.post_index.value,
+        tel: form.tel.value,
+        checkbox_delivery: form.checkbox_delivery.value,
+        delivery_name: form.delivery_name.value,
+        delivery_last_name: form.delivery_last_name.value,
+        delivery_region: form.delivery_region.value,
+        delivery_address: form.delivery_address.value,
+        delivery_post_index: form.delivery_post_index.value,
+        delivery_tel: form.delivery_tel.value,
+        year: form.year.value,
+        month: form.month.value,
+        date: form.date.value,
+        card_num: form.card_num.value,
+        card_validity: form.card_validity.value,
+        card_cvv_code: form.card_cvv_code.value,
+        user: form.user.value,
+        pass: form.pass.value,
+        confirm_pass: form.confirm_pass.value,
     }
-}
+    console.log(obj)
+    values.innerHTML = JSON.stringify(obj, 0, 1)
+})

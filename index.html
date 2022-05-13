@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-        <form action="result.html" method="post" class="form">
+        <form action="#" method="post" class="form">
             <span>Выберите модель велосипеда</span>
             <select name="bike_list" class="send_value">
                 <option value="Merida Speeder">Merida Speeder</option>
@@ -212,8 +212,7 @@
                     class="send_value">
                 <input type="text" placeholder="Почтовый индекс" maxlength="8" class="only_num send_value"
                     name="delivery_post_index">
-                <input type="text" placeholder="Телефон" maxlength="15" class="only_num send_value"
-                    name="delivery_text">
+                <input type="text" placeholder="Телефон" maxlength="15" class="only_num send_value" name="delivery_tel">
             </div>
             <span>Дата доставки</span>
             <select name="year" class="send_value">
@@ -282,8 +281,9 @@
                 class="entry_field confirm_pass send_value" name="confirm_pass">
             <a class="btn" id="btn">Отправить</a>
         </form>
+        <div class="values"></div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="./script.js"></script>
 
 </html>
